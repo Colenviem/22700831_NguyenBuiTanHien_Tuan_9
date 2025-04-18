@@ -8,9 +8,9 @@ const ThemeToggler = () => {
 
     const toggle = () => {
         dispatch(toggleTheme());
-      };
+    };
     
-      return (
+    return (
         <div className={`app-container ${theme}`}>
           <h2>🌓 Giao diện hiện tại: {theme === 'light' ? '🌞 Sáng' : '🌙 Tối'}</h2>
           <button onClick={toggle}>
