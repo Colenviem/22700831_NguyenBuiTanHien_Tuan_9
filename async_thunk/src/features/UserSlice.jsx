@@ -5,6 +5,7 @@ export const fetchUsers = createAsyncThunk('users/fetchUsers', async () => {
     if (!response.ok) throw new Error('Lỗi khi lấy dữ liệu');
     return await response.json();
 });
+
 const UserSlice = createSlice({
     name: 'users',
     initialState: {
